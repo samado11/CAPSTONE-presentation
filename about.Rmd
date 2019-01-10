@@ -9,9 +9,7 @@ output: ioslides_presentation
 
 ## Introduction
 
-This presentation is created as part of the requirement for the Coursera Data Science Capstone Course.
-
-The goal of the project is to build a predictive text model combined with a shiny app UI that will predict the next word as the user types a sentence similar to the way most smart phone keyboards are implemented today using the technology of Swiftkey.
+In this presentation we will talk about the prediction algorthim that i have done and its link is below
 
 [Shiny App] - [https://beta.rstudioconnect.com/connect/#/apps/4526]
 
@@ -38,6 +36,12 @@ If no Quadgram is found, back off to Trigram (first two words of Trigram are the
 If no Trigram is found, back off to Bigram (first word of Bigram is the last word of the sentence)
 If no Bigram is found, back off to the most common word with highest frequency 'the' is returned.
 
-## Shiny Application
+## Shiny APP
 A Shiny application was developed based on the next word prediction model described previously as shown below. 
+
+
+
+
+
+Thanks
 
