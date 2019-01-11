@@ -23,11 +23,9 @@ A subset of the original data was sampled from the three sources (blogs,twitter 
 Next, data cleaning is done by conversion to lowercase, strip white space, and removing punctuation and numbers.
 The corresponding n-grams are then created (Quadgram,Trigram and Bigram).
 Next, the term-count tables are extracted from the N-Grams and sorted according to the frequency in descending order.
-Lastly, the n-gram objects are saved as R-Compressed files (.RData files).
+
 
 ## Word Prediction algorithm
-The prediction model for next word is based on the Katz Back-off algorithm. Explanation of the next word prediction flow is as below:
-
 
 Compressed data sets containing descending frequency sorted n-grams are first loaded.
 User input words are cleaned in the similar way as before prior to prediction of the next word.

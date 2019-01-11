@@ -112,11 +112,9 @@
 
 <p>Before building the word prediction algorithm, data are first processed and cleaned as steps below:</p>
 
-<p>A subset of the original data was sampled from the three sources (blogs,twitter and news) which is then merged into one. Next, data cleaning is done by conversion to lowercase, strip white space, and removing punctuation and numbers. The corresponding n-grams are then created (Quadgram,Trigram and Bigram). Next, the term-count tables are extracted from the N-Grams and sorted according to the frequency in descending order. Lastly, the n-gram objects are saved as R-Compressed files (.RData files).</p>
+<p>A subset of the original data was sampled from the three sources (blogs,twitter and news) which is then merged into one. Next, data cleaning is done by conversion to lowercase, strip white space, and removing punctuation and numbers. The corresponding n-grams are then created (Quadgram,Trigram and Bigram). Next, the term-count tables are extracted from the N-Grams and sorted according to the frequency in descending order.</p>
 
 </article></slide><slide class=""><hgroup><h2>Word Prediction algorithm</h2></hgroup><article  id="word-prediction-algorithm">
-
-<p>The prediction model for next word is based on the Katz Back-off algorithm. Explanation of the next word prediction flow is as below:</p>
 
 <p>Compressed data sets containing descending frequency sorted n-grams are first loaded. User input words are cleaned in the similar way as before prior to prediction of the next word. For prediction of the next word, Quadgram is first used (first three words of Quadgram are the last three words of the user provided sentence). If no Quadgram is found, back off to Trigram (first two words of Trigram are the last two words of the sentence). If no Trigram is found, back off to Bigram (first word of Bigram is the last word of the sentence) If no Bigram is found, back off to the most common word with highest frequency &#39;the&#39; is returned.</p>
 
