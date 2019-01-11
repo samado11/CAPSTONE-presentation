@@ -14,7 +14,7 @@ In this presentation we will talk about the prediction algorthim that i have don
 [Shiny App] - [https://beta.rstudioconnect.com/connect/#/apps/4526]
 
 
-## Getting & Cleaning the Data
+## Getting & Cleaning Data before building the algorithm
 
 Before building the word prediction algorithm, data are first processed and cleaned as steps below:
 
@@ -25,7 +25,7 @@ The corresponding n-grams are then created (Quadgram,Trigram and Bigram).
 Next, the term-count tables are extracted from the N-Grams and sorted according to the frequency in descending order.
 Lastly, the n-gram objects are saved as R-Compressed files (.RData files).
 
-## Word Prediction Model
+## Word Prediction algorithm
 The prediction model for next word is based on the Katz Back-off algorithm. Explanation of the next word prediction flow is as below:
 
 

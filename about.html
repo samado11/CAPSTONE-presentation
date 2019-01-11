@@ -108,13 +108,13 @@
 
 <p><a href='#shiny-app' title=''>Shiny App</a> - [<a href='https://beta.rstudioconnect.com/connect/#/apps/4526' title=''>https://beta.rstudioconnect.com/connect/#/apps/4526</a>]</p>
 
-</article></slide><slide class=""><hgroup><h2>Getting &amp; Cleaning the Data</h2></hgroup><article  id="getting-cleaning-the-data">
+</article></slide><slide class=""><hgroup><h2>Getting &amp; Cleaning Data before building the algorithm</h2></hgroup><article  id="getting-cleaning-data-before-building-the-algorithm">
 
 <p>Before building the word prediction algorithm, data are first processed and cleaned as steps below:</p>
 
 <p>A subset of the original data was sampled from the three sources (blogs,twitter and news) which is then merged into one. Next, data cleaning is done by conversion to lowercase, strip white space, and removing punctuation and numbers. The corresponding n-grams are then created (Quadgram,Trigram and Bigram). Next, the term-count tables are extracted from the N-Grams and sorted according to the frequency in descending order. Lastly, the n-gram objects are saved as R-Compressed files (.RData files).</p>
 
-</article></slide><slide class=""><hgroup><h2>Word Prediction Model</h2></hgroup><article  id="word-prediction-model">
+</article></slide><slide class=""><hgroup><h2>Word Prediction algorithm</h2></hgroup><article  id="word-prediction-algorithm">
 
 <p>The prediction model for next word is based on the Katz Back-off algorithm. Explanation of the next word prediction flow is as below:</p>
 
